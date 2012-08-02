@@ -29,8 +29,8 @@
 	singlefile.config.get = function() {
 		return localStorage.config ? JSON.parse(localStorage.config) : {
 			removeFrames : false,
-			removeScripts : true,
-			removeObjects : true,
+			removeScripts : false,
+			removeObjects : false,
 			removeHidden : false,
 			removeUnusedCSSRules : false,
 			processInBackground : true,
