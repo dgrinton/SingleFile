@@ -4,8 +4,13 @@ SingleFile is a Chrome extension that helps to archive a complete page into a si
 
 This fork allows SingleFile to work on file:// URLs.
 
-This fork is not in the Chrome Web Store. To install it, drag the .crx files
-from WebContent/ onto Chrome's extensions screen, or enable Developer mode from
-Chrome's extensions screen and Load each unpacked extension (WebContent/core and
-WebContent/ui - you'll also need to set the "dev" flag to true on line 23 of
-WebContent/ui/scripts/bg/background.js).
+This fork is not in the Chrome Web Store. To install it, either:
+
+- drag the .crx files from WebContent/ onto Chrome's extensions screen, then tick
+the "Allow access to file URLs" for each extension
+
+OR
+
+- enable Developer mode from Chrome's extensions screen and Load each unpacked
+extension (WebContent/core and WebContent/ui - you'll also need to set the "dev"
+flag to true on line 23 of WebContent/ui/scripts/bg/background.js).
