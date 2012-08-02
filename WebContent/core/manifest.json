@@ -1,5 +1,5 @@
 {
-	"name": "SingleFile Core",
+	"name": "SingleFile Core (localaccess)",
 	"icons": {
 		"16": "resources/icon_16.png",
 		"48": "resources/icon_48.png",
@@ -8,11 +8,11 @@
 	"description": "Page processor used by SingleFile",
 	"background_page" : "pages/background.html",
 	"content_scripts": [ {
-		  "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
+		  "matches": [ "<all_urls>" ],
 		  "js": [ "scripts/content/wininfo.js" ],
 		  "run_at" : "document_start",
 		  "all_frames" : true
 	 } ],
-	"permissions": [ "tabs", "http://*/*", "https://*/*", "unlimitedStorage" ],
+	"permissions": [ "tabs", "<all_urls>", "unlimitedStorage" ],
 	"minimum_chrome_version" : "7"
 }

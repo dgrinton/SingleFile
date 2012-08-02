@@ -1,5 +1,5 @@
 {
-	"name": "SingleFile",
+	"name": "SingleFile (localaccess)",
 	"icons": {
 		"16": "resources/icon_16.png",
 		"48": "resources/icon_48.png",
@@ -13,7 +13,7 @@
 	    "default_title": "Process this page with SingleFile"
 	},
 	"content_scripts" : [ {
-		"matches" : [ "http://*/*", "https://*/*" ],
+		"matches" : [ "<all_urls>" ],
 		"js" : [ "scripts/content/content.js" ],
 		"run_at" : "document_start",
 		"all_frames" : true

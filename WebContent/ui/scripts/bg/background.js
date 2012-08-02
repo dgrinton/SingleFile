@@ -43,11 +43,11 @@
 	}
 
 	function processable(url) {
-		return !url.indexOf("https://chrome.google.com") == 0 && (url.indexOf("http://") == 0 || url.indexOf("https://") == 0);
+        return true;
 	}
 
 	function process(tabId, url, processSelection, processFrame) {
-		var SINGLE_FILE_CORE_EXT_ID = dev ? "onlinihoegnbbcmeeocfeplgbkmoidla" : "jemlklgaibiijojffihnhieihhagocma";
+		var SINGLE_FILE_CORE_EXT_ID = dev ? "mofbbdbffkeienmobjplikfnchknmead" : "dlmnohdnaclfeakkfmgpdlcclbdkapan";
 		detectExtension(SINGLE_FILE_CORE_EXT_ID, function(detected) {
 			if (detected) {
 				if (processable(url)) {
