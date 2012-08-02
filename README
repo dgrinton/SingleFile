@@ -6,5 +6,6 @@ This fork allows SingleFile to work on file:// URLs.
 
 This fork is not in the Chrome Web Store. To install it, drag the .crx files
 from WebContent/ onto Chrome's extensions screen, or enable Developer mode from
-Chrome's extensions screen and Pack each extension (you'll also need to set the
-"dev" flag to true on line 23 of WebContent/ui/scripts/bg/background.js).
+Chrome's extensions screen and Pack each extension (WebContent/core and
+WebContent/ui - you'll also need to set the "dev" flag to true on line 23 of
+WebContent/ui/scripts/bg/background.js).
